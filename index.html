@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+        <title>The Book Sharing</title>
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logo.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">CONTENT</a></li>
+                        <li><a href="">MORE</a></li>
+                        <li><a href="">THE OTHER</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>The Dream of the Red Chamber</h1>
+                <p>A Dream of Red Mansions,<br> also known as The Book of Stones</p>
+                <a href="" class="change">MORE</a>
+            </div>
+
+        </section>
+
+        <!----MORE------->
+
+        <section class="more">
+            <h1>MORE I offer</h1>
+            <p>It is a story about a large feudal family in an unknown dynasty, <br>in which the relationship between Jia Baoyu, Lin Daiyu, and Xue Baochai is the main theme, <br>and through the descriptions of daily events, it reflects the love and hate of the twelve women of the Golden Hairpin as the main body of the Grand View Garden of the Jia residence.</p>
+        </section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cFXebUouQao?si=MaGLzA1Jcie4uZ3h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!----------JavaScript for Toggle Menu---------->
+        <script>
+            
+            var navLinks = document.getElementById("navLinks")
+            
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+        
+    </body>
+</html>
