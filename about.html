@@ -36,24 +36,14 @@
     </nav>
 
     <center>
-        <h1>Books Info System</h1>
-        <p> Please choose a books dataset to be processed</p>
-        <input type="file" id="csvFileInput" accept=".csv">
-        <br>
-        <label for="searchKeyword">Search Keyword: </label>
-        <input type="text" id="searchKeyword" oninput="search()">
-
-        <label for="sortColumn">Sort by Average Rating: </label>
-        <select id="sortColumn">
-            <option value="asc">Low to High</option>
-            <option value="desc">High to Low</option>
-        </select>
-        <button onclick="sortTable()">Sort</button>
+        <h1>About</h1>
+		<div class="col-lg-12">
+			<P>Module code and title: COMP1111 Programming (Gold)<P>
+			<P>Academic year: 2023-24<P>
+			<p>Coursework title: Assignment 1: Client-side scripting<p>
+			<p>Durham University<p>
+		</div>
     </center>
-
-    <table id="dataTable">
-        <!-- Table content will be added dynamically -->
-    </table>
 
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
